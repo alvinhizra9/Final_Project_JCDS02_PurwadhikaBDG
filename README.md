@@ -10,7 +10,7 @@ I used a few classification models for predicting loan. From all of them, I choo
 Then, I do oversampling with SMOTE, but the result is no better. So I choose predicting without oversampling. The Result is 77% f1-score for training data and 86% for its recall default value. For testing data, I get 63% f1-score with 61% recall default value.
 
 ### Dashboard
-Thanks to Colorlib.com, I have built a beauty dashboard for support this Loan Predictor Modelling. There are 5 pages, which are:
+Thanks to Colorlib.com, I have built a beauty dashboard to support this Loan Predictor Modelling. There are 5 pages, which are:
 
 #### Home
 This page is to fill features for predicting Loan status. There is 9 features which is, family size, contract type, gender, 
