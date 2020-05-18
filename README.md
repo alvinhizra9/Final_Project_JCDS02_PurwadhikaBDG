@@ -7,8 +7,7 @@ https://www.kaggle.com/chiragc/loan-defaulting-prediction
 
 ### Modelling
 I used a few classification models for predicting loan. From all of them, I choose RandomForestClassification to be upgraded.
-Then, I do oversampling with SMOTE to get better recall of default data. The Result is 81% f1-score for training data and 93%
-for its recall default value. For testing data, I get 62% f1-score with 62% recall default value.
+Then, I do oversampling with SMOTE, but the result is no better. So I choose predicting without oversampling. The Result is 77% f1-score for training data and 86% for its recall default value. For testing data, I get 63% f1-score with 61% recall default value.
 
 ### Dashboard
 Thanks to Colorlib.com, I have built a beauty dashboard for support this Loan Predictor Modelling. There are 5 pages, which are:
