@@ -14,6 +14,17 @@ The Data is from this Kaggle link.
 
 https://www.kaggle.com/chiragc/loan-defaulting-prediction
 
+### Pre-Processing
+From the data, I merge three csv files into one dataframe. First, I change
+two files that contains monthly default value of users into one dataframe
+that contains each user's default value in the period. Then, one data remaining
+is about background of each users. I delete two columns that contains about 66%
+NaN value and reduce a little rows from other columns that contains NaN value
+as well.
+
+So last sighting of the dataframe after pre-processing is going to be looked
+like this.
+
 ### Modelling
 I used a few classification models for predicting loan. From all of them, I choose RandomForestClassification to be upgraded.
 Then, I do oversampling with SMOTE, but the result is no better. So I choose predicting without oversampling. The Result is 77% f1-score for training data and 86% for its recall default value. For testing data, I get 63% f1-score with 61% recall default value.
