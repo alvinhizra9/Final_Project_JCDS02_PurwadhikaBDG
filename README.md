@@ -1,7 +1,16 @@
 # Final Project JCDS Purwadhika
+## Loan Predicting with Machine Learning
 Alvin Hizra's Final Project of Job Connector Data Science Purwadhika Digital Technology School Bandung.
 
-This Project is about Machine Learning and applying it to predict Loan Default. The Data is from this Kaggle link.
+Loan Prediction is common project of loan company or bank to investigate 
+wheter their potential customer is going to be default customer or not.
+Machine learning is a method to help this project. Using classification learning,
+so we can predict what a potential customer status is.
+
+In this project, let me discuss best metric I made, how I get it, and in conclussion
+section, I will also describe other insights I found.
+
+The Data is from this Kaggle link.
 
 https://www.kaggle.com/chiragc/loan-defaulting-prediction
 
