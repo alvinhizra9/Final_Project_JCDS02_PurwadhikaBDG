@@ -26,6 +26,8 @@ So last sighting of the dataframe after pre-processing is going to be looked
 like this.
 ![Capture](https://user-images.githubusercontent.com/60774740/83596124-0cfbf780-a58e-11ea-8125-04d1e34a0e09.PNG)
 
+*birth_date column is dropped later.
+
 ### Returned value
 Returned value is my formula to help me judging model output. This formula is 
 written like this.
@@ -40,8 +42,9 @@ Where:
 - loaned_money : sum of loan amount of predicted customer who not default
 
 ### Modelling
-I used a few classification models for predicting loan. From all of them, I choose RandomForestClassification to be upgraded.
-Then, I do oversampling with SMOTE, but the result is no better. So I choose predicting without oversampling. The Result is 77% f1-score for training data and 86% for its recall default value. For testing data, I get 63% f1-score with 61% recall default value.
+I used some classification models for predicting loan. RandomForestClassification 
+turns out to be the best model that produce best metrics and returned value 
+produced.
 
 ### Dashboard
 Thanks to Colorlib.com, I have built a beauty dashboard to support this Loan Predictor Modelling. There are 5 pages, which are:
@@ -51,7 +54,7 @@ This page is to fill features for predicting Loan status. There is 9 features wh
 province, age, group history type, monthly expense, and loan amount.
 ![Untitled](https://user-images.githubusercontent.com/60774740/81801257-51234b80-953e-11ea-8c00-9d0aedb2032b.png)
 
-birth_date column is dropped later.
+*birth_date column is dropped later*
 
 ### Prediction
 This page tells the result of the input that we give at Home page.
