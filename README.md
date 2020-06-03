@@ -24,6 +24,20 @@ as well.
 
 So last sighting of the dataframe after pre-processing is going to be looked
 like this.
+![Capture](https://user-images.githubusercontent.com/60774740/83596124-0cfbf780-a58e-11ea-8125-04d1e34a0e09.PNG)
+
+### Returned value
+Returned value is my formula to help me judging model output. This formula is 
+written like this.
+
+<img src="https://render.githubusercontent.com/render/math?math=returned = (recall0 * n0 * m0) + ( (1-recall1) * n1 * m1) / loanedmoney">
+
+Where:
+- n0 : number of people on test data whom not default
+- n1 : number of people on test data whom default
+- m0 : mean of loan amount
+- m1 : how much loan amount returned until the most default month.
+- loaned_money : sum of loan amount of predicted customer who not default
 
 ### Modelling
 I used a few classification models for predicting loan. From all of them, I choose RandomForestClassification to be upgraded.
@@ -36,6 +50,8 @@ Thanks to Colorlib.com, I have built a beauty dashboard to support this Loan Pre
 This page is to fill features for predicting Loan status. There is 9 features which is, family size, contract type, gender, 
 province, age, group history type, monthly expense, and loan amount.
 ![Untitled](https://user-images.githubusercontent.com/60774740/81801257-51234b80-953e-11ea-8c00-9d0aedb2032b.png)
+
+birth_date column is dropped later.
 
 ### Prediction
 This page tells the result of the input that we give at Home page.
